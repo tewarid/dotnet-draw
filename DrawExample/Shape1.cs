@@ -7,14 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Draw;
 
-namespace Draw
+namespace DrawExample
 {
-    public abstract partial class Drawing : UserControl
+    public partial class Shape1 : Shape
     {
-        public Drawing()
+        public Shape1()
         {
-            DoubleBuffered = true;
             InitializeComponent();
         }
     }

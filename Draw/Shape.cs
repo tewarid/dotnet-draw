@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Draw
 {
-    public partial class Shape : UserControl
+    public abstract partial class Shape : UserControl
     {
         bool selected = false;
         bool moving = false;

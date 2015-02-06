@@ -29,8 +29,9 @@ namespace DrawExample
         /// </summary>
         private void InitializeComponent()
         {
-            this.drawing11 = new Drawing1();
-            this.shape1 = new Draw.Shape();
+            this.drawing11 = new DrawExample.Drawing1();
+            this.shape11 = new DrawExample.Shape1();
+            this.shape12 = new DrawExample.Shape1();
             this.SuspendLayout();
             // 
             // drawing11
@@ -42,19 +43,27 @@ namespace DrawExample
             this.drawing11.Size = new System.Drawing.Size(738, 432);
             this.drawing11.TabIndex = 0;
             // 
-            // shape1
+            // shape11
             // 
-            this.shape1.Location = new System.Drawing.Point(173, 67);
-            this.shape1.Name = "shape1";
-            this.shape1.Size = new System.Drawing.Size(150, 150);
-            this.shape1.TabIndex = 1;
+            this.shape11.Location = new System.Drawing.Point(160, 102);
+            this.shape11.Name = "shape11";
+            this.shape11.Size = new System.Drawing.Size(150, 150);
+            this.shape11.TabIndex = 1;
+            // 
+            // shape12
+            // 
+            this.shape12.Location = new System.Drawing.Point(436, 102);
+            this.shape12.Name = "shape12";
+            this.shape12.Size = new System.Drawing.Size(150, 150);
+            this.shape12.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(738, 432);
-            this.Controls.Add(this.shape1);
+            this.Controls.Add(this.shape12);
+            this.Controls.Add(this.shape11);
             this.Controls.Add(this.drawing11);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -65,7 +74,8 @@ namespace DrawExample
         #endregion
 
         private Drawing1 drawing11;
-        private Shape shape1;
+        private Shape1 shape11;
+        private Shape1 shape12;
 
     }
 }

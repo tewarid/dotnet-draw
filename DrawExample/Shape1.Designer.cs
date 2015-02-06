@@ -1,7 +1,6 @@
-﻿using Draw;
-namespace DrawExample
+﻿namespace DrawExample
 {
-    partial class Drawing1
+    partial class Shape1
     {
         /// <summary> 
         /// Required designer variable.
@@ -29,18 +28,10 @@ namespace DrawExample
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // Drawing1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "Drawing1";
-            this.ResumeLayout(false);
-
         }
 
         #endregion
-
     }
 }
