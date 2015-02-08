@@ -6,15 +6,15 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Draw;
 using System.Windows.Forms;
 
-namespace Draw
+namespace DrawExample
 {
-    public partial class Drawing : UserControl
+    public partial class Link1 : Link
     {
-        public Drawing()
+        public Link1()
         {
-            DoubleBuffered = true;
             InitializeComponent();
         }
     }

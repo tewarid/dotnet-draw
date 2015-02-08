@@ -10,12 +10,18 @@ using System.Windows.Forms;
 
 namespace Draw
 {
-    public abstract partial class Shape : UserControl
+    public partial class Shape : UserControl
     {
         bool selected = false;
         bool moving = false;
         int leftOffset;
         int topOffset;
+
+        public bool Selected
+        {
+            get { return selected; }
+            set { selected = value; }
+        }
 
         public Shape()
         {
@@ -63,12 +69,14 @@ namespace Draw
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-            Rectangle r = new Rectangle(3, 3, this.Width - 6, this.Height - 6);
+            Rectangle r = new Rectangle(3, 3, this.Width - 7, this.Height - 7);
             e.Graphics.DrawRectangle(Pens.Black, r);
             if (selected)
             {
-                Rectangle s = new Rectangle(1, 1, this.Width - 2, this.Height - 2);
-                e.Graphics.DrawRectangle(Pens.DarkBlue, s);
+                Rectangle s = new Rectangle(0, 0, this.Width - 1, this.Height - 1);
+                Pen p = new Pen(Color.Black);
+                p.DashStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+                e.Graphics.DrawRectangle(p, s);                
             }
         }
 
