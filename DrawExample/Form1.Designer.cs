@@ -29,19 +29,30 @@ namespace DrawExample
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
             this.link11 = new DrawExample.Link1();
             this.shape12 = new DrawExample.Shape1();
             this.shape11 = new DrawExample.Shape1();
             this.drawing11 = new DrawExample.Drawing1();
             this.SuspendLayout();
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(25, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "0, 0";
+            // 
             // link11
             // 
-            this.link11.BackColor = System.Drawing.Color.Transparent;
-            this.link11.Location = new System.Drawing.Point(254, 192);
+            this.link11.End = new System.Drawing.Point(738, 200);
+            this.link11.Location = new System.Drawing.Point(-2, 198);
             this.link11.Name = "link11";
             this.link11.Selected = false;
-            this.link11.Size = new System.Drawing.Size(233, 10);
+            this.link11.Size = new System.Drawing.Size(742, 5);
+            this.link11.Start = new System.Drawing.Point(0, 201);
             this.link11.TabIndex = 3;
             // 
             // shape12
@@ -68,12 +79,14 @@ namespace DrawExample
             this.drawing11.Name = "drawing11";
             this.drawing11.Size = new System.Drawing.Size(738, 432);
             this.drawing11.TabIndex = 0;
+            this.drawing11.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(738, 432);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.link11);
             this.Controls.Add(this.shape12);
             this.Controls.Add(this.shape11);
@@ -81,6 +94,7 @@ namespace DrawExample
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -90,6 +104,7 @@ namespace DrawExample
         private Shape1 shape11;
         private Shape1 shape12;
         private Link1 link11;
+        private System.Windows.Forms.Label label1;
 
     }
 }
