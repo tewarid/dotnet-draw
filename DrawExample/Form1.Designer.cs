@@ -47,12 +47,12 @@ namespace DrawExample
             // 
             // link11
             // 
-            this.link11.End = new System.Drawing.Point(738, 200);
-            this.link11.Location = new System.Drawing.Point(-2, 198);
+            this.link11.End = new System.Drawing.Point(400, 400);
+            this.link11.Location = new System.Drawing.Point(198, 48);
             this.link11.Name = "link11";
             this.link11.Selected = false;
-            this.link11.Size = new System.Drawing.Size(742, 5);
-            this.link11.Start = new System.Drawing.Point(0, 201);
+            this.link11.Size = new System.Drawing.Size(204, 354);
+            this.link11.Start = new System.Drawing.Point(200, 50);
             this.link11.TabIndex = 3;
             // 
             // shape12

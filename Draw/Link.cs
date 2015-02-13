@@ -112,15 +112,15 @@ namespace Draw
             e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             int x1, y1, x2, y2;
             x1 = indent;
-            x2 = this.Width - indent - 1;
+            x2 = this.Width - indent;
             if (start.Y < end.Y)
             {
                 y1 = indent;
-                y2 = this.Height - indent - 1;
+                y2 = this.Height - indent;
             }
             else
             {
-                y1 = this.Height - indent - 1;
+                y1 = this.Height - indent;
                 y2 = indent;
             }
             e.Graphics.DrawLine(p, x1, y1, x2, y2);
