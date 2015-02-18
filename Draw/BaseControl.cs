@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Draw
 {
-    public partial class Shape : Control
+    public partial class BaseControl : System.Windows.Forms.Control
     {
         bool selected = false;
         bool moving = false;
@@ -23,7 +23,7 @@ namespace Draw
             set { selected = value; }
         }
 
-        public Shape()
+        public BaseControl()
         {
             InitializeComponent();
             DoubleBuffered = true;

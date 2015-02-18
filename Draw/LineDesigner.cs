@@ -7,7 +7,7 @@ using System.Windows.Forms.Design;
 
 namespace Draw
 {
-    class LinkDesigner : ControlDesigner
+    class LineDesigner : ControlDesigner
     {
     }
 }

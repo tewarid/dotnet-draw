@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Draw
 {
-    public partial class Drawing : UserControl
+    public partial class Drawing : Control
     {
         public Drawing()
         {

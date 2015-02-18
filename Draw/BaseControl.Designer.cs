@@ -1,6 +1,6 @@
 ﻿namespace Draw
 {
-    partial class Shape
+    partial class BaseControl
     {
         /// <summary> 
         /// Required designer variable.

@@ -11,7 +11,7 @@ using Draw;
 
 namespace DrawExample
 {
-    public partial class Shape1 : Shape
+    public partial class Shape1 : Draw.BaseControl
     {
         public Shape1()
         {

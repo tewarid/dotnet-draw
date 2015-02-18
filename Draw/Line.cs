@@ -10,8 +10,8 @@ using System.Windows.Forms;
 
 namespace Draw
 {
-    [DesignerAttribute(typeof(LinkDesigner))]
-    public partial class Link : Shape
+    [DesignerAttribute(typeof(LineDesigner))]
+    public partial class Line : Draw.BaseControl
     {
         const byte indent = 2;
 
@@ -97,7 +97,7 @@ namespace Draw
             AdjustClipRegion();
         }
 
-        public Link()
+        public Line()
         {
             InitializeComponent();
         }

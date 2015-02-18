@@ -1,6 +1,6 @@
 ﻿namespace Draw
 {
-    partial class Link
+    partial class Line
     {
         /// <summary> 
         /// Required designer variable.

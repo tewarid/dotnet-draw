@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace DrawExample
 {
-    public partial class Link1 : Link
+    public partial class Link1 : Line
     {
         public Link1()
         {
