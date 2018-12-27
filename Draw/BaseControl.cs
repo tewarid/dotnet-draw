@@ -1,27 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Draw
 {
-    public partial class BaseControl : System.Windows.Forms.Control
+    public partial class BaseControl : Control
     {
-        bool selected = false;
         bool moving = false;
         int leftOffset;
         int topOffset;
 
-        public bool Selected
-        {
-            get { return selected; }
-            set { selected = value; }
-        }
+        public bool Selected { get; set; } = false;
 
         public BaseControl()
         {
@@ -49,7 +38,7 @@ namespace Draw
 
         void Shape_MouseClick(object sender, MouseEventArgs e)
         {
-            selected = true;
+            Selected = true;
             Refresh();
             if (e.Button == System.Windows.Forms.MouseButtons.Right)
             {
@@ -60,7 +49,7 @@ namespace Draw
         void Shape_MouseDown(object sender, MouseEventArgs e)
         {
             moving = true;
-            selected = true;
+            Selected = true;
             leftOffset = e.X;
             topOffset = e.Y;
             Refresh();
@@ -71,7 +60,7 @@ namespace Draw
             base.OnPaint(e);
             Rectangle r = new Rectangle(3, 3, this.Width - 7, this.Height - 7);
             e.Graphics.DrawRectangle(Pens.Black, r);
-            if (selected)
+            if (Selected)
             {
                 Rectangle s = new Rectangle(0, 0, this.Width - 1, this.Height - 1);
                 Pen p = new Pen(Color.Black);

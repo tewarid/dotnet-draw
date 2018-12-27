@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Draw
 {
     [DesignerAttribute(typeof(LineDesigner))]
-    public partial class Line : Draw.BaseControl
+    public partial class Line : BaseControl
     {
         const byte indent = 2;
 
